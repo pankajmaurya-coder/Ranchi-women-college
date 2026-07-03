@@ -5,6 +5,7 @@
 @section('content')
 
 @include('web.partials.slider')
-@include('web.partials.welcome')
+<!-- @include('web.partials.welcome') -->
+@include('web.partials.department')
 
 @endsection
