@@ -576,13 +576,15 @@ ul{
 
 /* footer */
 .footer{
-    background: linear-gradient(rgba(8,31,56,.94), rgba(8,31,56,.94));
+    background: linear-gradient(rgba(8,31,56,.94));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
     padding: 50px 0 50px;
 }
+
+
 
 .footer-container{
     width: min(92%, 1320px);
@@ -597,7 +599,11 @@ ul{
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 35px;
+}
+
+.footer-divider{
+    text-align: center;
+     margin-bottom: 25px;
 }
 
 .footer-contact{
@@ -641,6 +647,7 @@ ul{
     justify-content:center;
     align-items:center;
     color:#fff;
+    text-decoration: none;
     border-radius:8px;
     transition:.3s;
 }
@@ -675,6 +682,7 @@ ul{
 
 .footer-links li{
     margin-bottom:8px; 
+      
 }
 
 .footer-links li:last-child{
@@ -686,11 +694,13 @@ ul{
     align-items:flex-start;
     gap:8px;
 
+     font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
     color:#fff;
     text-decoration:none;
-    font-size:15px;
     line-height:1.5;
-
     transition:.3s;
 }
 
@@ -752,5 +762,194 @@ ul{
 .social-icons{
     justify-content:flex-start;
 }
+
+}
+
+/* quick */
+.quick{
+    padding: 80px 0;
+    background:#f8fafc;
+}
+
+.quick-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.quick-subtitle{
+    display:inline-block;
+    font-size:14px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#b48a4d;
+    margin-bottom:10px;
+}
+
+.quick-title{
+    margin-bottom:12px;
+    color:#12325b;
+}
+
+.quick-text{
+    max-width:600px;
+    margin:auto;
+    color:#6b7280;
+    line-height:1.7;
+}
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:24px;
+    align-items:stretch;
+}
+
+.quick-card{
+    background:#fff;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 35px rgba(0,0,0,.06);
+    display:flex;
+    flex-direction:column;
+    transition:.3s;
+}
+
+.quick-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 45px rgba(0,0,0,.10);
+}
+
+.card-header{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.card-icon{
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:22px;
+    flex-shrink:0;
+}
+
+.program .card-icon{
+    background:#2563eb;
+}
+
+.exam .card-icon{
+    background:#10b981;
+}
+
+.academic .card-icon{
+    background:#7c3aed;
+}
+
+.card-title{
+    margin-bottom:8px;
+    color:#12325b;
+}
+
+.card-text{
+    color:#6b7280;
+    line-height:1.6;
+    font-size:14px;
+}
+
+.link-list,
+.feature-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.link-list li:not(:last-child),
+.feature-list li:not(:last-child){
+    margin-bottom:14px;
+}
+
+.link-list a{
+    display:flex;
+    align-items:center;
+    padding:5px 16px;
+    background:#fff;
+    border-radius:10px;
+    text-decoration:none;
+    color:#1f2937;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.link-list a:hover{
+    background:#eff6ff;
+    color:#2563eb;
+}
+
+
+.feature-list a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    background:#fff;
+    border-radius:12px;
+    text-decoration:none;
+    color:#1f2937;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.feature-list a:hover{
+    transform:translateX(4px);
+}
+
+.feature-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    font-size:18px;
+}
+
+.exam .feature-icon{
+    background:#ecfdf5;
+    color:#10b981;
+}
+
+.academic .feature-icon{
+    background:#f5f3ff;
+    color:#7c3aed;
+}
+
+.feature-list span{
+    flex:1;
+}
+
+@media(max-width:991px){
+
+    .quick-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .quick{
+        padding:60px 0;
+    }
+
+    .quick-card{
+        padding:22px;
+    }
 
 }

@@ -1,7 +1,12 @@
 <footer class="footer">
+   
     <div class="footer-container">
+        
         <div class="footer-column">
             <h3 class="footer-title">Contact Us</h3>
+            <div class="footer-divider">
+                <img src="{{asset('asset/web/layouts/divider1.png')}}">
+            </div>
             <ul class="footer-contact">
                 <li>
                     <i class="fa-solid fa-location-dot"></i>
@@ -34,6 +39,9 @@
 
         <div class="footer-column">
             <h3 class="footer-title">Quick Links</h3>
+            <div class="footer-divider">
+                <img src="{{asset('asset/web/layouts/divider1.png')}}">
+            </div>
             <div class="footer-links-wrapper">
                 <ul class="footer-links">
                     <li><a href="#">Home</a></li>
@@ -60,6 +68,9 @@
         </div>
         <div class="footer-column">
             <h3 class="footer-title">Important Information</h3>
+            <div class="footer-divider">
+                <img src="{{asset('asset/web/layouts/divider1.png')}}">
+            </div>
             <div class="footer-links-wrapper">
                 <ul class="footer-links">
                     <li><a href="#">Academic Calendar</a></li>
