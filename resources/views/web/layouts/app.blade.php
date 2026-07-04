@@ -33,7 +33,7 @@
       
     @yield('content')
 
-
+     @include('web.layouts.footer')
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
     <script src="{{asset('js/web/slider.js')}}"></script>
 </body>

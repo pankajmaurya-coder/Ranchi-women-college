@@ -45,19 +45,91 @@
             </div>
         </div>
     </div>
-
-    <nav class="header-navbar">
-        <div class="container">
-            <ul class="navbar-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Departments</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Examination</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-        </div>
-    </nav>
 </header>
+ <nav class="header-navbar">
+    <div class="container">
+        <ul class="navbar-menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-dropdown">
+                <a href="#">
+                    About
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Background</a></li>
+                    <li><a href="#">Vision & Mission</a></li>
+                    <li><a href="#">Principals</a></li>
+                    <li><a href="#">Rules & Regulations</a></li>
+                    <li><a href="#">Holiday List</a></li>
+                    <li><a href="#">Ranchi University Kulgeet</a></li>
+                    <li><a href="#">IQAC & AQAR</a></li>
+                    <li><a href="#">Statutory Bodies</a></li>
+                    <li><a href="#">Committees</a></li>
+                    <li><a href="#">Infrastructure</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="#">Academics
+                     <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="nav-dropdown-menu">
+                       <li><a href="#">Syllabus</a></li>
+                       <li><a href="#">Programme and Cource</a></li>
+                       <li><a href="#">Academic Calender</a></li>
+                       <li><a href="#">Library</a></li>
+                       <li><a href="#">Fee Structure</a></li>
+                       <li><a href="#">Placement</a></li>
+                        <li><a href="#">Distinguished Alumni</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="#">Admissions
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="nav-dropdown-menu">
+                       <li><a href="#">UG Admission</a></li>
+                       <li><a href="#">UG Admission</a></li>
+                       <li><a href="#">Vocational Admission</a></li>
+                       <li><a href="#">B.Ed Admission</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="#">Department
+                     <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="nav-dropdown-menu">
+                       <li><a href="#">Art</a></li>
+                       <li><a href="#">Science</a></li>
+                       <li><a href="#">M.A In Education</a></li>
+                       <li><a href="#">Commerce</a></li>
+                       <li><a href="#">Vocational</a></li>
+                       <li><a href="#">Department of B.Ed</a></li>
+                        <li><a href="#">Distinguished Alumni</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Examination</a>
+            </li>
+
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li class="nav-dropdown">
+                <a href="#">RTI
+                <i class="fa-solid fa-angle-down"></i>
+                </a>
+                 <ul class="nav-dropdown-menu">
+                      <li><a href="#">Gravience</a></li>
+                       <li><a href="#">Action Taken Report</a></li>
+                 </ul>
+            </li>
+            <li>
+                <a href="#">IQAC / NAAC</a>
+            </li>
+        </ul>
+    </div>
+</nav>
