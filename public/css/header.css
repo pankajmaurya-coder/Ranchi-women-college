@@ -1,0 +1,360 @@
+
+
+:root{
+    --primary:#0A2947;
+    --secondary:#d32f2f;
+    --white:#fff;
+    --text:#1f2937;
+    --border:#e5e7eb;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --radius:8px;
+    --speed:.3s ease;
+}
+
+*{box-sizing:border-box;}
+
+.container{
+    width:min(1280px,100% - 32px);
+    margin:auto;
+}
+
+.site-header{
+    background:#fff;
+    position:relative;
+    z-index:100;
+}
+
+.header-top{
+    background:var(--primary);
+    color:#fff;
+}
+
+.top-info{
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    margin:0;
+    padding:10px 0;
+    flex-wrap:wrap;
+    font-size:clamp(.78rem,.8vw,.95rem);
+}
+
+.header-main{
+    background:#fff;
+    border-bottom:1px solid var(--border);
+}
+
+.header-main-wrapper{
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:24px;
+    padding:18px 0;
+}
+
+.header-logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    min-width:0;
+}
+
+.logo{
+    position:relative;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:clamp(60px,5vw,90px);
+    display:block;
+}
+
+.logo-estd{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-10px;
+    background:var(--secondary);
+    color:#fff;
+    border-radius:30px;
+    padding:2px 8px;
+    font-size:.65rem;
+}
+
+.logo-title{
+    min-width:0;
+}
+
+.logo-title h1{
+    margin:0;
+    color:var(--primary);
+    font-size:clamp(1.35rem,2vw,2.2rem);
+    line-height:1.15;
+}
+
+.logo-title p{
+    margin:6px 0 0;
+    color:#555;
+    font-size:clamp(.8rem,1vw,1rem);
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.naac-logo{
+    width:clamp(55px,5vw,80px);
+    height:auto;
+}
+
+.btn{
+    white-space:nowrap;
+    padding:.75rem 1rem;
+}
+
+.header-bar{
+    display:none;
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:8px;
+    background:#f3f4f6;
+    cursor:pointer;
+    font-size:1.3rem;
+}
+
+.header-navbar{
+    background:var(--primary);
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.navbar-menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.navbar-menu>li{position:relative;}
+
+.navbar-menu>li>a{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 14px;
+    font-size:clamp(.9rem,.9vw,1rem);
+    transition:var(--speed);
+}
+
+.navbar-menu>li>a:hover{
+    background:rgba(255,255,255,.12);
+}
+
+.nav-dropdown-menu{
+    position:absolute;
+    left:0;
+    top:100%;
+    width:260px;
+    background:#fff;
+    list-style:none;
+    padding:8px 0;
+    margin:0;
+    border-radius:0 0 var(--radius) var(--radius);
+    box-shadow:var(--shadow);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    transition:var(--speed);
+}
+
+.nav-dropdown:hover>.nav-dropdown-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.nav-dropdown-menu a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    padding:12px 18px;
+}
+
+.nav-dropdown-menu a:hover{
+    background:#f6f8fb;
+    color:var(--secondary);
+}
+
+/* --------- 1200 --------- */
+@media (max-width:1200px){
+    .navbar-menu>li>a{padding:16px 10px;font-size:.92rem;}
+}
+
+/* --------- 992 --------- */
+@media (max-width:992px){
+
+.header-top{display:none;}
+
+.header-main-wrapper{
+    grid-template-columns:1fr auto;
+}
+
+.btn{
+    display:none;
+}
+
+.header-bar{
+    display:grid;
+    place-items:center;
+}
+
+.header-actions{
+    gap:12px;
+}
+
+.naac-logo{
+    width:60px;
+}
+
+.header-navbar{
+    position:static;
+}
+
+.navbar-menu{
+    display:block;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+}
+
+.header-navbar.active .navbar-menu{
+    max-height:2500px;
+}
+
+.navbar-menu>li{
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.navbar-menu>li>a{
+    justify-content:space-between;
+    padding:16px 20px;
+}
+
+.nav-dropdown-menu{
+    position:static;
+    width:100%;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    display:none;
+    box-shadow:none;
+    border-radius:0;
+    background:#eef3f8;
+}
+
+.nav-dropdown.active>.nav-dropdown-menu{
+    display:block;
+}
+
+.nav-dropdown-menu a{
+    padding:12px 38px;
+}
+
+}
+
+/* --------- 768 --------- */
+@media (max-width:768px){
+
+.header-main-wrapper{
+    grid-template-columns:1fr auto;
+    align-items:start;
+}
+
+.header-logo{
+    gap:12px;
+}
+
+.logo-title h1{
+    line-height:1.2;
+}
+
+.header-actions{
+    flex-direction:column;
+    align-items:flex-end;
+}
+
+.naac-logo{
+    order:2;
+    margin-top:8px;
+}
+
+}
+
+/* --------- 576 --------- */
+@media (max-width:576px){
+
+.container{
+    width:min(100% - 20px,1280px);
+}
+
+.logo img{
+    width:58px;
+}
+
+.logo-estd{
+    font-size:.55rem;
+}
+
+.logo-title h1{
+    font-size:1.15rem;
+}
+
+.logo-title p{
+    font-size:.75rem;
+}
+
+.header-actions{
+    gap:8px;
+}
+
+.naac-logo{
+    width:52px;
+}
+
+}
+
+/* --------- 400 --------- */
+@media (max-width:400px){
+
+.header-main-wrapper{
+    gap:10px;
+}
+
+.logo-title h1{
+    font-size:1rem;
+}
+
+.logo-title p{
+    display:none;
+}
+
+.naac-logo{
+    width:46px;
+}
+
+.header-bar{
+    width:42px;
+    height:42px;
+}
+
+}

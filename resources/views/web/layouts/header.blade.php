@@ -5,7 +5,6 @@
                 <li>📞 Admission: +91 70501 74723</li>
                 <li><i class="fa-regular fa-envelope" style="color: rgb(255, 255, 255);"></i> ranchiwomenscollege@gmail.com</li>
                 <li>☎ Helpline: 0651-2562221</li>
-                <!-- <li>💼 Placement Cell: placementcellrwc23@gmail.com</li> -->
             </ul>
         </div>
     </div>
@@ -40,13 +39,13 @@
                         Login Institutional Webmail
                     </a>
 
-                     <div class="header-bar"><i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i></div>
+                     <div class="header-bar"  id="menuToggle"><i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i></div>
                 </div>
             </div>
         </div>
     </div>
 </header>
- <nav class="header-navbar">
+ <nav class="header-navbar" id="navbar">
     <div class="container">
         <ul class="navbar-menu">
             <li>
