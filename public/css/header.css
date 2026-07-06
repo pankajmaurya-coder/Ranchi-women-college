@@ -1,103 +1,102 @@
-
-
 :root{
-    --primary:#0A2947;
-    --secondary:#d32f2f;
+    --primary-color:#0A2947;
+    --secondary-color:#d32f2f;
+    --accent-color:#f8b400;
     --white:#fff;
-    --text:#1f2937;
-    --border:#e5e7eb;
-    --shadow:0 10px 30px rgba(0,0,0,.08);
-    --radius:8px;
-    --speed:.3s ease;
+    --black:#000;
+    --heading-font:"Poppins",sans-serif;
+    --body-font:"Roboto",sans-serif;
+    --container-width:1200px;
+    --transition:.3s ease;
+    --border-radius:8px;
 }
 
-*{box-sizing:border-box;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul{list-style:none;}
+a{text-decoration:none;}
 
 .container{
-    width:min(1280px,100% - 32px);
-    margin:auto;
+    width:min(var(--container-width),calc(100% - 32px));
+    margin-inline:auto;
 }
 
-.site-header{
-    background:#fff;
-    position:relative;
-    z-index:100;
-}
+
 
 .header-top{
-    background:var(--primary);
+    background:var(--primary-color);
     color:#fff;
+    padding:1px 0px;
 }
 
 .top-info{
-    list-style:none;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    gap:16px;
-    margin:0;
-    padding:10px 0;
+    gap:20px;
     flex-wrap:wrap;
-    font-size:clamp(.78rem,.8vw,.95rem);
+    font:400 14px var(--body-font);
+}
+
+.top-info li{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    justify-content: center;
 }
 
 .header-main{
     background:#fff;
-    border-bottom:1px solid var(--border);
+    border-bottom:1px solid #e8e8e8;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
 }
 
 .header-main-wrapper{
-    display:grid;
-    grid-template-columns:1fr auto;
+    display:flex;
+    justify-content:space-between;
     align-items:center;
-    gap:24px;
-    padding:18px 0;
+    gap:20px;
+    padding:6px 0;
 }
 
 .header-logo{
     display:flex;
     align-items:center;
-    gap:18px;
+    gap:14px;
+    flex:1;
     min-width:0;
 }
 
 .logo{
-    position:relative;
-    flex-shrink:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .logo img{
-    width:clamp(60px,5vw,90px);
-    display:block;
+    height:clamp(62px,6vw,82px);
+    width:auto;
 }
 
 .logo-estd{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:-10px;
-    background:var(--secondary);
-    color:#fff;
-    border-radius:30px;
-    padding:2px 8px;
-    font-size:.65rem;
-}
-
-.logo-title{
-    min-width:0;
+    font-size:12px;
+    color:#a17900;
+    font-weight:600;
 }
 
 .logo-title h1{
-    margin:0;
-    color:var(--primary);
-    font-size:clamp(1.35rem,2vw,2.2rem);
+    color:var(--primary-color);
+    font:700 clamp(20px,2.3vw,32px) var(--heading-font);
     line-height:1.15;
 }
 
 .logo-title p{
-    margin:6px 0 0;
-    color:#555;
-    font-size:clamp(.8rem,1vw,1rem);
+    color:#d32f2f;
+    font:500 clamp(12px,1vw,16px) var(--body-font);
 }
 
 .header-actions{
@@ -107,28 +106,36 @@
 }
 
 .naac-logo{
-    width:clamp(55px,5vw,80px);
-    height:auto;
+    height:clamp(58px,5vw,82px);
+    width:auto;
 }
 
-.btn{
-    white-space:nowrap;
-    padding:.75rem 1rem;
+.btn-outline-primary{
+    border:2px solid var(--primary-color);
+    border-radius:50px;
+    padding:9px 18px;
+    color:var(--primary-color);
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-outline-primary:hover{
+    background:var(--primary-color);
+    color:#fff;
 }
 
 .header-bar{
     display:none;
-    width:46px;
-    height:46px;
+    width:44px;
+    height:44px;
     border:none;
-    border-radius:8px;
-    background:#f3f4f6;
+    background:transparent;
+    font-size:28px;
     cursor:pointer;
-    font-size:1.3rem;
 }
 
 .header-navbar{
-    background:var(--primary);
+    background:var(--primary-color);
     position:sticky;
     top:0;
     z-index:999;
@@ -138,43 +145,32 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    list-style:none;
-    margin:0;
-    padding:0;
+    gap:20px;
 }
 
-.navbar-menu>li{position:relative;}
+.navbar-menu>li{
+    position:relative;
+}
 
 .navbar-menu>li>a{
     display:flex;
     align-items:center;
     gap:6px;
+    padding:15px 0;
     color:#fff;
-    text-decoration:none;
-    padding:18px 14px;
-    font-size:clamp(.9rem,.9vw,1rem);
-    transition:var(--speed);
-}
-
-.navbar-menu>li>a:hover{
-    background:rgba(255,255,255,.12);
+    font:500 15px var(--body-font);
 }
 
 .nav-dropdown-menu{
     position:absolute;
-    left:0;
     top:100%;
-    width:260px;
-    background:#fff;
-    list-style:none;
-    padding:8px 0;
-    margin:0;
-    border-radius:0 0 var(--radius) var(--radius);
-    box-shadow:var(--shadow);
+    left:0;
+    min-width:250px;
+    background:#12395d;
     opacity:0;
     visibility:hidden;
     transform:translateY(10px);
-    transition:var(--speed);
+    transition:.3s;
 }
 
 .nav-dropdown:hover>.nav-dropdown-menu{
@@ -185,47 +181,33 @@
 
 .nav-dropdown-menu a{
     display:block;
-    text-decoration:none;
-    color:#333;
-    padding:12px 18px;
+    padding:12px 20px;
+    color:#fff;
 }
 
-.nav-dropdown-menu a:hover{
-    background:#f6f8fb;
-    color:var(--secondary);
+.mobile-login{
+display:none;
 }
 
-/* --------- 1200 --------- */
-@media (max-width:1200px){
-    .navbar-menu>li>a{padding:16px 10px;font-size:.92rem;}
+@media(max-width:992px){
+
+    .mobile-login{
+
+display:block;
+
 }
 
-/* --------- 992 --------- */
-@media (max-width:992px){
+.mobile-login a{
+background:#d32f2f;
+margin:15px;
+border-radius:8px;
+justify-content:center;
+font-weight:600;
+}
 
 .header-top{display:none;}
-
-.header-main-wrapper{
-    grid-template-columns:1fr auto;
-}
-
-.btn{
-    display:none;
-}
-
-.header-bar{
-    display:grid;
-    place-items:center;
-}
-
-.header-actions{
-    gap:12px;
-}
-
-.naac-logo{
-    width:60px;
-}
-
+.btn-outline-primary{display:none;}
+.header-bar{display:flex;align-items:center;justify-content:center;}
 .header-navbar{
     position:static;
 }
@@ -234,7 +216,8 @@
     display:block;
     max-height:0;
     overflow:hidden;
-    transition:max-height .35s ease;
+    transition:max-height .35s;
+    background:var(--primary-color);
 }
 
 .header-navbar.active .navbar-menu{
@@ -247,19 +230,17 @@
 
 .navbar-menu>li>a{
     justify-content:space-between;
-    padding:16px 20px;
+    padding:15px 20px;
 }
 
 .nav-dropdown-menu{
     position:static;
-    width:100%;
     opacity:1;
     visibility:visible;
     transform:none;
     display:none;
-    box-shadow:none;
-    border-radius:0;
-    background:#eef3f8;
+    min-width:100%;
+    background:#14395f;
 }
 
 .nav-dropdown.active>.nav-dropdown-menu{
@@ -267,94 +248,65 @@
 }
 
 .nav-dropdown-menu a{
-    padding:12px 38px;
+    padding:12px 40px;
 }
 
 }
 
-/* --------- 768 --------- */
-@media (max-width:768px){
+@media(max-width:768px){
 
 .header-main-wrapper{
-    grid-template-columns:1fr auto;
-    align-items:start;
-}
-
-.header-logo{
-    gap:12px;
-}
-
-.logo-title h1{
-    line-height:1.2;
-}
-
-.header-actions{
-    flex-direction:column;
-    align-items:flex-end;
-}
-
-.naac-logo{
-    order:2;
-    margin-top:8px;
-}
-
-}
-
-/* --------- 576 --------- */
-@media (max-width:576px){
-
-.container{
-    width:min(100% - 20px,1280px);
-}
-
-.logo img{
-    width:58px;
-}
-
-.logo-estd{
-    font-size:.55rem;
-}
-
-.logo-title h1{
-    font-size:1.15rem;
-}
-
-.logo-title p{
-    font-size:.75rem;
-}
-
-.header-actions{
-    gap:8px;
-}
-
-.naac-logo{
-    width:52px;
-}
-
-}
-
-/* --------- 400 --------- */
-@media (max-width:400px){
-
-.header-main-wrapper{
-    gap:10px;
-}
-
-.logo-title h1{
-    font-size:1rem;
+    align-items:center;
 }
 
 .logo-title p{
     display:none;
 }
 
+.logo img{
+    height:70px;
+}
+
+.logo-title h1{
+    font-size:18px;
+}
+
+.header-actions{
+    gap:10px;
+}
+
 .naac-logo{
-    width:46px;
+    height:52px;
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+    width:calc(100% - 20px);
+}
+
+.logo img{
+    height:60px;
+}
+
+.logo-title h1{
+    font-size:16px;
+}
+
+.logo-estd{
+    font-size:10px;
+}
+
+.naac-logo{
+    height:46px;
 }
 
 .header-bar{
-    width:42px;
-    height:42px;
+    width:40px;
+    height:40px;
+    font-size:24px;
 }
 
 }
