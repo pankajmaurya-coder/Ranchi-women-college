@@ -1,44 +1,3 @@
-// const menuToggle = document.querySelector("#menuToggle");
-// const navbar = document.querySelector("#navbar");
-
-// menuToggle.addEventListener("click", () => {
-
-//     navbar.classList.toggle("active");
-
-// });
-
-
-// const dropdowns = document.querySelectorAll(".nav-dropdown");
-
-// dropdowns.forEach(dropdown => {
-
-//     const link = dropdown.querySelector("a");
-
-//     link.addEventListener("click", function (e) {
-
-//         if (window.innerWidth <= 992) {
-
-//             e.preventDefault();
-
-//             dropdowns.forEach(item => {
-
-//                 if (item !== dropdown) {
-//                     item.classList.remove("active");
-//                 }
-
-//             });
-
-//             dropdown.classList.toggle("active");
-
-//         }
-
-//     });
-
-// });
-
-// ==========================================
-// MOBILE MENU
-// ==========================================
 
 const menuToggle = document.querySelector(".header-bar");
 const navbar = document.querySelector(".header-navbar");
@@ -49,10 +8,6 @@ menuToggle.addEventListener("click", () => {
     navbar.classList.toggle("active");
 
 });
-
-// ==========================================
-// MOBILE DROPDOWN
-// ==========================================
 
 dropdowns.forEach((dropdown) => {
 
@@ -67,7 +22,6 @@ dropdowns.forEach((dropdown) => {
 
         const isOpen = dropdown.classList.contains("active");
 
-        // Close all dropdowns
         dropdowns.forEach((item) => {
 
             item.classList.remove("active");
@@ -80,7 +34,7 @@ dropdowns.forEach((dropdown) => {
 
         });
 
-        // Open clicked dropdown
+       
         if (!isOpen) {
 
             dropdown.classList.add("active");
@@ -92,10 +46,6 @@ dropdowns.forEach((dropdown) => {
     });
 
 });
-
-// ==========================================
-// RESET ON RESIZE
-// ==========================================
 
 window.addEventListener("resize", () => {
 
@@ -117,4 +67,33 @@ window.addEventListener("resize", () => {
 
     }
 
+});
+
+
+// notic
+
+
+const marquees=document.querySelectorAll('.notice-marquee');
+
+marquees.forEach(box=>{
+    const track=box.querySelector('.notice-track');
+    track.innerHTML+=track.innerHTML;
+
+    let id=setInterval(()=>{
+        box.scrollTop+=1;
+        if(box.scrollTop>=track.scrollHeight/2){
+            box.scrollTop=0;
+        }
+    },35);
+
+    box.addEventListener('mouseenter',()=>clearInterval(id));
+
+    box.addEventListener('mouseleave',()=>{
+        id=setInterval(()=>{
+            box.scrollTop+=1;
+            if(box.scrollTop>=track.scrollHeight/2){
+                box.scrollTop=0;
+            }
+        },35);
+    });
 });

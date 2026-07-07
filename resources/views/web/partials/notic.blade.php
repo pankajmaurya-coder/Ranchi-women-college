@@ -148,6 +148,19 @@
                                 </div>
                             </a>
 
+                             <a href="#" class="notice-item">
+                                <div class="notice-date">
+                                    <span class="day">15</span>
+                                    <span class="month">APR</span>
+                                    <span class="year">2026</span>
+                                </div>
+                                <div class="notice-content">
+                                    <h4>
+                                        College Foundation Day Celebration.
+                                    </h4>
+                                </div>
+                            </a>
+
                             <a href="#" class="notice-item">
 
                                 <div class="notice-date">
