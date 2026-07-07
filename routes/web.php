@@ -7,4 +7,4 @@ Route::get('/', function () {
 });
 
 
-Route::view('/head', 'web.header');
+Route::view('/about', 'web/about/about');

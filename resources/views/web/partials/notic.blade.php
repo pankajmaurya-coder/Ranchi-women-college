@@ -1,7 +1,7 @@
 <section class="notice">
     <div class="container">
         <div class="section-heading">
-            <span class="section-subtitle">Latest Updates</span>
+            <span class="section-subtitle">----✦ Latest Updates ✦----</span>
             <h2 class="section-title">
                 Notices & Academic Events
             </h2>
@@ -37,9 +37,6 @@
                                         Press Release of Undergraduate Certificate
                                         (Arts) Semester-I Examination 2024.
                                     </h4>
-                                    <span class="notice-badge">
-                                        New
-                                    </span>
                                 </div>
                             </a>
                             <a href="#" class="notice-item">
@@ -53,9 +50,7 @@
                                         Undergraduate Certificate (Science)
                                         Semester-I Examination Notice.
                                     </h4>
-                                    <span class="notice-badge">
-                                        New
-                                    </span>
+                                    
                                 </div>
                             </a>
                             <a href="#" class="notice-item">
@@ -107,9 +102,7 @@
                                         Last Date Extended for Director Law
                                         Application Form.
                                     </h4>
-                                    <span class="notice-badge">
-                                        New
-                                    </span>
+                                    
                                 </div>
                             </a>
                         </div>
