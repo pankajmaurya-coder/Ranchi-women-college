@@ -56,9 +56,9 @@
                     <li class="nav-dropdown">
                         <a href="#">About <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Background</a></li>
-                            <li><a href="#">Vision & Mission</a></li>
+                            <li><a href="{{route('about')}}">About Us</a></li>
+                            <li><a href="{{route('history')}}"">Background</a></li>
+                            <li><a href="{{route('vision')}}">Vision & Mission</a></li>
                             <li><a href="#">Principals</a></li>
                             <li><a href="#">Rules & Regulations</a></li>
                             <li><a href="#">Holiday List</a></li>

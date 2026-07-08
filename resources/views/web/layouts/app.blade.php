@@ -17,16 +17,12 @@
           integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
           crossorigin="anonymous" 
           referrerpolicy="no-referrer" />
-
-          <!-- swipper js -->
-              <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
-    />
-
-    <!-- custome css -->
+          
+           <!-- custome css -->
 
      <link rel="stylesheet" href="{{asset('css/web.css')}}">
+
+      @stack('style')
 </head>
 <body>
     @include('web.layouts.header')
@@ -34,9 +30,8 @@
     @yield('content')
 
      @include('web.layouts.footer')
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
-    <script src="{{asset('js/web/slider.js')}}"></script>
-    <script src="{{asset('js/web/header.js')}}"></script>
-    <script src="{{asset('js/web/testimonial.js')}}"></script>
+      
+     <script src="{{asset('js/web/header.js')}}"></script>
+     @stack('script')
 </body>
 </html>

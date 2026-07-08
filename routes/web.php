@@ -6,5 +6,7 @@ Route::get('/', function () {
     return view('web.index');
 });
 
-
-Route::view('/about', 'web/about/about');
+//about
+Route::view('/about', 'web/about/about/index')->name('about');
+Route::view('/background', 'web/about/history')->name('history');
+Route::view('/vision', 'web/about/vision-mission')->name('vision');
