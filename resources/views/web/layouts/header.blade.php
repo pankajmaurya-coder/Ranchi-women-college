@@ -51,7 +51,7 @@
             <div class="container">
                 <ul class="navbar-menu">
 
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/">Home</a></li>
 
                     <li class="nav-dropdown">
                         <a href="#">About <i class="fa-solid fa-angle-down"></i></a>
@@ -59,7 +59,7 @@
                             <li><a href="{{route('about')}}">About Us</a></li>
                             <li><a href="{{route('history')}}"">Background</a></li>
                             <li><a href="{{route('vision')}}">Vision & Mission</a></li>
-                            <li><a href="#">Principals</a></li>
+                            <li><a href="{{route('principle')}}">Principals</a></li>
                             <li><a href="#">Rules & Regulations</a></li>
                             <li><a href="#">Holiday List</a></li>
                             <li><a href="#">Ranchi University Kulgeet</a></li>

@@ -23,8 +23,13 @@
                 alt="Divider"
                 class="welcome-divider">
         </div>
-        <div class="history-intro">
             <div class="content">
+                 
+                <div class="history-image">
+                <img
+                    src="{{ asset('asset/web/about/bhanumati.png') }}"
+                    alt="College History">
+                </div>
                 <p>
                    With 11 students and 03 Teachers the Visionary Founder Principal,
                     Mrs. Bhanumati Prasad started nurturing a seedling in the-then Mohsin
@@ -48,14 +53,10 @@
                  by  UGC through letter no. F 8-105/86 (CPP-1) dated 3rd  Nov. 1987 under 
                  section 2(f) UGC Act 1956.
             </p>
-            </div>
-            <div class="history-image">
-                <img
-                    src="{{ asset('asset/web/about/bhanumati.png') }}"
-                    alt="College History">
-            </div>
-        </div>
-        <div class="content">
+            <!-- </div> -->
+           
+        <!-- </div> -->
+        <!-- <div class="content"> -->
          <p>
           Ranchi Women's College, Ranchi was started  in 1949 with a vision to lead  from “darkness to light”
            which was reflected in its logo also. At that time Jharkhand  was combined with Bihar 
@@ -116,7 +117,7 @@
                    level today to aprox 10,000 students. 
 
            </p>
-        </div>
+        <!-- </div> -->
     </div>
 </section>
 @endsection

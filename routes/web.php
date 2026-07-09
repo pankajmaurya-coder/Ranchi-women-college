@@ -10,3 +10,4 @@ Route::get('/', function () {
 Route::view('/about', 'web/about/about/index')->name('about');
 Route::view('/background', 'web/about/history')->name('history');
 Route::view('/vision', 'web/about/vision-mission')->name('vision');
+Route::view('/principle', 'web/about/principale')->name('principle');
