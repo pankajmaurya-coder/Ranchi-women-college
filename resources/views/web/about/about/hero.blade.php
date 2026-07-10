@@ -2,7 +2,7 @@
      <img src="{{ asset('asset/web/about/about_main.png') }}"
          alt="About Ranchi Women's College"
          class="hero-image">
-    <div class="about-hero-overlay"></div>
+    <div class="hero-overlay"></div>
     <div class="container">
         <div class="about-hero-content">
             <span class="about-hero-tag">

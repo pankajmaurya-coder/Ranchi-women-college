@@ -8,7 +8,7 @@
 
 @section('content')
 
-<section class="principal-header">
+<section class="principal-header  ">
     <div class="container">
 
         <span class="header-badge">

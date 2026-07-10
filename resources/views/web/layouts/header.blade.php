@@ -60,10 +60,10 @@
                             <li><a href="{{route('history')}}"">Background</a></li>
                             <li><a href="{{route('vision')}}">Vision & Mission</a></li>
                             <li><a href="{{route('principle')}}">Principals</a></li>
-                            <li><a href="#">Rules & Regulations</a></li>
-                            <li><a href="#">Holiday List</a></li>
-                            <li><a href="#">Ranchi University Kulgeet</a></li>
-                            <li><a href="#">IQAC & AQAR</a></li>
+                            <li><a href="{{route('rule')}}">Rules & Regulations</a></li>
+                            <li><a href="{{route('holiday')}}">Holiday List</a></li>
+                            <li><a href="{{route('kulgeet')}}">Ranchi University Kulgeet</a></li>
+                            <li><a href="{{route('iqac')}}">IQAC & AQAR</a></li>
                             <li><a href="#">Statutory Bodies</a></li>
                             <li><a href="#">Committees</a></li>
                             <li><a href="#">Infrastructure</a></li>

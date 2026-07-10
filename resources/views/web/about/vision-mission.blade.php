@@ -7,7 +7,7 @@
    @endpush 
 
 @section('content')
-<section class="vision-mission">
+<section class="vision-mission  page-section">
     <div class="conatiner">
          <div class="title">
             <h2>Our Vision & Mission</h2>
