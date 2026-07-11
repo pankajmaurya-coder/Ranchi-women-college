@@ -5,7 +5,9 @@
         <img src="{{asset('asset/web/partials/welcome/principle.png')}}">
         </div>
 
-        <div class="content">
+        <div class="content iqac-content">
+          <h3 class="font-monospace">INTRODUCTION</h3>
+          <span></span>
          <p>
            The Internal Quality Assurance Cell (IQAC) is an integral part of the institution, dedicated to promoting quality
               enhancement and sustaining excellence in all academic and administrative activities.

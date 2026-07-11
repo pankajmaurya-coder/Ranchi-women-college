@@ -15,3 +15,4 @@ Route::view('/rule-regulation', 'web/about/rule-regulation')->name('rule');
 Route::view('/holiday', 'web/about/holiday')->name('holiday');
 Route::view('/kulgeet', 'web/about/kulgeet')->name('kulgeet');
 Route::view('/iqac', 'web/about/iqac-aqar.index')->name('iqac');
+// Route::view('/iqac', 'web/about/iqac-aqar.index')->name('statutory');
