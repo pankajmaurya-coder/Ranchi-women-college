@@ -15,4 +15,9 @@ Route::view('/rule-regulation', 'web/about/rule-regulation')->name('rule');
 Route::view('/holiday', 'web/about/holiday')->name('holiday');
 Route::view('/kulgeet', 'web/about/kulgeet')->name('kulgeet');
 Route::view('/iqac', 'web/about/iqac-aqar.index')->name('iqac');
-// Route::view('/iqac', 'web/about/iqac-aqar.index')->name('statutory');
+Route::view('/infrastructure', 'web/about/infrastructure/index')->name('infrastructure');
+Route::view('/newslatter', 'web/about/newslatter')->name('newslatter');
+
+
+// alumini garima
+Route::view('alumini', 'web/alumini/index')->name('alumini');

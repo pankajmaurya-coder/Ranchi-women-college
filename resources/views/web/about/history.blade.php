@@ -53,10 +53,7 @@
                  by  UGC through letter no. F 8-105/86 (CPP-1) dated 3rd  Nov. 1987 under 
                  section 2(f) UGC Act 1956.
             </p>
-            <!-- </div> -->
            
-        <!-- </div> -->
-        <!-- <div class="content"> -->
          <p>
           Ranchi Women's College, Ranchi was started  in 1949 with a vision to lead  from “darkness to light”
            which was reflected in its logo also. At that time Jharkhand  was combined with Bihar 
@@ -117,7 +114,6 @@
                    level today to aprox 10,000 students. 
 
            </p>
-        <!-- </div> -->
     </div>
 </section>
 @endsection

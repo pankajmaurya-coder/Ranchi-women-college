@@ -66,8 +66,8 @@
                             <li><a href="{{route('iqac')}}">IQAC & AQAR</a></li>
                             <li><a href="#">Statutory Bodies</a></li>
                             <li><a href="#">Committees</a></li>
-                            <li><a href="#">Infrastructure</a></li>
-                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="{{route('infrastructure')}}">Infrastructure</a></li>
+                            <li><a href="{{route('newslatter')}}">Newsletter</a></li>
                         </ul>
                     </li>
 
@@ -109,6 +109,7 @@
 
                     <li><a href="#">Examination</a></li>
                     <li><a href="#">Gallery</a></li>
+                    <li><a href="{{route('alumini')}}">Alumini</a></li>
 
                     <li class="nav-dropdown">
                         <a href="#">RTI <i class="fa-solid fa-angle-down"></i></a>
