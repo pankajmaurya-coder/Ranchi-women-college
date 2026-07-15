@@ -171,7 +171,7 @@
         </li>
 
         <li>
-            <a href="#">
+            <a href="{{route('committee')}}">
                 <div class="feature-icon">
                     <i class="fa-solid fa-users"></i>
                 </div>
@@ -180,7 +180,7 @@
         </li>
 
         <li>
-            <a href="#">
+            <a href="{{route('iqac')}}">
                 <div class="feature-icon">
                     <i class="fa-solid fa-award"></i>
                 </div>

@@ -57,7 +57,7 @@
                         <a href="#">About <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="nav-dropdown-menu">
                             <li><a href="{{route('about')}}">About Us</a></li>
-                            <li><a href="{{route('history')}}"">Background</a></li>
+                            <li><a href="{{route('history')}}">Background</a></li>
                             <li><a href="{{route('vision')}}">Vision & Mission</a></li>
                             <li><a href="{{route('principle')}}">Principals</a></li>
                             <li><a href="{{route('rule')}}">Rules & Regulations</a></li>
@@ -65,7 +65,7 @@
                             <li><a href="{{route('kulgeet')}}">Ranchi University Kulgeet</a></li>
                             <li><a href="{{route('iqac')}}">IQAC & AQAR</a></li>
                             <li><a href="#">Statutory Bodies</a></li>
-                            <li><a href="#">Committees</a></li>
+                            <li><a href="{{route('committee')}}">Committees</a></li>
                             <li><a href="{{route('infrastructure')}}">Infrastructure</a></li>
                             <li><a href="{{route('newslatter')}}">Newsletter</a></li>
                         </ul>
@@ -87,10 +87,10 @@
                     <li class="nav-dropdown">
                         <a href="#">Admissions <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="#">UG Admission</a></li>
-                            <li><a href="#">PG Admission</a></li>
-                            <li><a href="#">Vocational Admission</a></li>
-                            <li><a href="#">B.Ed Admission</a></li>
+                            <li><a href="{{route('admission.ug')}}">UG Admission</a></li>
+                            <li><a href="{{route('admission.pg')}}">PG Admission</a></li>
+                            <li><a href="{{route('admission.vocational')}}">Vocational Admission</a></li>
+                            <li><a href="{{route('admission.B.Ed')}}">B.Ed Admission</a></li>
                         </ul>
                     </li>
 

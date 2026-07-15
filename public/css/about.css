@@ -348,25 +348,34 @@
     flex-shrink:0;
 }
 
+.principal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
 .principal-content h2{
-    margin:5px 0;
+    margin:2px 0;
     font-size:32px;
     color: #000000;
-    text-align: center;
+    font-family: montserrat;
 }
 
 .year{
-    display:inline-block;
     padding:2px 15px;
     border-radius:30px;
     background:#8b1e3f;
     color:#fff;
     font-size:14px;
+    text-align: center;
 }
 
 .principal-content p{
     line-height:1.8;
     color:#555;
+    font-family: sans-serif;
+    font-size: 17px;
 }
 
 .other-principal{
@@ -446,6 +455,7 @@
     .first-principal img{
         width:220px;
         height:270px;
+        text-align: center;
     }
     .principal-content h2{
         font-size:28px;
@@ -1371,5 +1381,90 @@
     .facility-box:nth-child(even){
         border-right: none;
     }
+
+}
+
+/* commitee page  */
+.committee-directory{
+    background:#f8fafc;
+}
+
+.section-title{
+    max-width:700px;
+}
+
+.section-title h2{
+    color:#0A2947;
+    font-size:2.4rem;
+}
+
+.title-line{
+    width:80px;
+    height:4px;
+    background:#d32f2f;
+    border-radius:20px;
+}
+
+.committee-card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px 30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    border:1px solid #edf0f4;
+}
+
+.pdf-icon{
+    width:80px;
+    height:80px;
+    background:#eef3ff;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.pdf-icon i{
+    font-size:40px;
+    color:#d32f2f;
+}
+
+.committee-card h4{
+    color:#0A2947;
+    font-size:1.45rem;
+}
+
+.committee-btn{
+    background:#0A2947;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.committee-btn:hover{
+    background:#d32f2f;
+    color:#fff;
+}
+
+@media(max-width:768px){
+.committee-card{
+    text-align:center;
+    justify-content:center !important;
+}
+
+.committee-card>.d-flex{
+    flex-direction:column;
+}
+
+.committee-btn{
+    width:100%;
+}
+
+.section-title h2{
+    font-size:2rem;
+}
 
 }

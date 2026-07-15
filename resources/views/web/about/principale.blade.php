@@ -42,7 +42,6 @@
 
             <div class="card">
                 <img src="{{ asset('asset/web/about/bhanumati.png') }}" alt="Principal">
-
                 <div class="principal-content">
                     <h2>Dr. Bhanumati</h2>
                     <span class="year">1950 - 1955</span>
@@ -61,26 +60,69 @@
 
             <div class="card">
                 <i class="fa-regular fa-user "></i>
-                <h4>Principal Name</h4>
-                <span>1956 - 1960</span>
+                <h4>Miss S. Dey (Prof.-in-Charge)</h4>
+                <span>01.03.1981 to 27.02.1982</span>
             </div>
 
             <div class="card">
                  <i class="fa-regular fa-user "></i>
-                <h4>Principal Name</h4>
-                <span>1961 - 1965</span>
+                <h4>Dr.(Mrs) Indu Dhan</h4>
+                <span>28.02.1982 to 31.10.1986</span>
             </div>
 
             <div class="card">
                <i class="fa-regular fa-user "></i>
-                <h4>Principal Name</h4>
-                <span>1966 - 1970</span>
+                <h4>Dr.(Mrs) Vinodani Terway</h4>
+                <span>01.11.1986 to 31.07.1992</span>
             </div>
 
             <div class="card">
-                <img src="{{ asset('asset/web/about/bhanumati.png') }}">
-                <h4>Principal Name</h4>
-                <span>1971 - 1975</span>
+                <i class="fa-regular fa-user "></i>
+                <h4>Dr.(Mrs) Sushila Mishra </h4>
+                <span>01.08.1992 to 26.09.1994</span>
+            </div>
+
+            <div class="card">
+                <!-- <i class="fa-regular fa-user "></i> -->
+                 <img src="{{ asset('asset/web/about/principle/veena.png') }}" alt="Principal">
+                <h4>Dr.(Mrs) Veena Mahto</h4>
+                <span>27.09.1994 to 04.01.2001</span>
+            </div>
+
+            <div class="card">
+                <img src="{{ asset('asset/web/about/principle/manju.png') }}" alt="Principal">
+                <h4>Dr.(Mrs) Manju Sinha</h4>
+                <span>05.11.2001 to 10.07.2011</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-regular fa-user "></i>
+                <h4>Dr.(Mrs) Zinat Kausar</h4>
+                <span>11.07.2011 to 27.07.2012</span>
+            </div>
+
+             <div class="card">
+                <img src="{{ asset('asset/web/about/principle/manju.png') }}" alt="Principal">
+                <h4>Dr.(Mrs) Manju Sinha</h4>
+                <span>28.07.2012 to 31.01.2021</span>
+            </div>
+
+            <div class="card">
+                <img src="{{ asset('asset/web/about/principle/samsun.png') }}" alt="Principal">
+                <h4>Dr. Shamshun Nehar</h4>
+                <span>01.02.2021 to 18.01.2023</span>
+            </div>
+
+            <div class="card">
+                <img src="{{ asset('asset/web/about/principle/supriya.png') }}" alt="Principal">
+                <h4>Dr. Supriya</h4>
+                <span>19.01.2023 to 16.07.2025</span>
+            </div>
+
+            <div class="card">
+                <img src="{{ asset('asset/web/partials/welcome/principle.png') }}" alt="Principal">
+                <h4>Dr. Vinita Singh (Principal-in-Charge)</h4>
+                <span>17.07.2025 to Till Date</span>
             </div>
 
         </div>

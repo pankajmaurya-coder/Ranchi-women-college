@@ -19,6 +19,16 @@ Route::view('/kulgeet', 'web/about/kulgeet')->name('kulgeet');
 Route::view('/iqac', 'web/about/iqac-aqar.index')->name('iqac');
 Route::view('/infrastructure', 'web/about/infrastructure/index')->name('infrastructure');
 Route::view('/newslatter', 'web/about/newslatter')->name('newslatter');
+Route::view('/committee', 'web/about/committee')->name('committee');
+
+
+// admission
+    Route::prefix('admission')->name('admission.')->group(function () {
+         Route::view('/ug', 'web.admission.ug')->name('ug');
+         Route::view('/pg', 'web.admission.pg')->name('pg');
+         Route::view('/vocational', 'web.admission.vocational')->name('vocational');
+         Route::view('/B.Ed', 'web.admission.B_Ed')->name('B.Ed');
+    });
 
 
 // alumini garima
