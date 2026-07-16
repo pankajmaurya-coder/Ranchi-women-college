@@ -30,6 +30,18 @@ Route::view('/committee', 'web/about/committee')->name('committee');
          Route::view('/B.Ed', 'web.admission.B_Ed')->name('B.Ed');
     });
 
+ //Academic
 
+ Route::prefix('academic')->name('academic.')->group(function () {
+    Route::view('/syllabus', 'web.academics.syllabus')->name('syllabus');
+    Route::view('/programme', 'web.academics.programme')->name('programme');
+     Route::view('/calender', 'web.academics.calender')->name('calender');
+     Route::view('/fee', 'web.academics.fee')->name('fee');
+      Route::view('/alumini', 'web.academics.alumini')->name('alumini');
+ });
+
+  Route::prefix('department')->name('department.')->group(function () {
+     Route::view('/arts', 'web.department.arts')->name('arts');
+  });
 // alumini garima
 Route::view('alumini', 'web/alumini/index')->name('alumini');

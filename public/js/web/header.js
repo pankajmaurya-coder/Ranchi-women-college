@@ -69,10 +69,7 @@ window.addEventListener("resize", () => {
 
 });
 
-
 // notic
-
-
 const marquees=document.querySelectorAll('.notice-marquee');
 
 marquees.forEach(box=>{

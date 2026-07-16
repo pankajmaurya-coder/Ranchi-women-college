@@ -74,13 +74,13 @@
                     <li class="nav-dropdown">
                         <a href="#">Academics <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Programme and Course</a></li>
-                            <li><a href="#">Academic Calendar</a></li>
+                            <li><a href="{{route('academic.syllabus')}}">Syllabus</a></li>
+                            <li><a href="{{route('academic.programme')}}">Programme and Course</a></li>
+                            <li><a href="{{route('academic.calender')}}">Academic Calendar</a></li>
                             <li><a href="#">Library</a></li>
-                            <li><a href="#">Fee Structure</a></li>
+                            <li><a href="{{route('academic.fee')}}">Fee Structure</a></li>
                             <li><a href="#">Placement</a></li>
-                            <li><a href="#">Distinguished Alumni</a></li>
+                            <li><a href="{{route('academic.alumini')}}">Distinguished Alumni</a></li>
                         </ul>
                     </li>
 
@@ -97,13 +97,12 @@
                     <li class="nav-dropdown">
                         <a href="#">Department <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="#">Arts</a></li>
+                            <li><a href="{{route('department.arts')}}">Arts</a></li>
                             <li><a href="#">Science</a></li>
                             <li><a href="#">M.A. in Education</a></li>
                             <li><a href="#">Commerce</a></li>
                             <li><a href="#">Vocational</a></li>
                             <li><a href="#">Department of B.Ed</a></li>
-                            <li><a href="#">Distinguished Alumni</a></li>
                         </ul>
                     </li>
 

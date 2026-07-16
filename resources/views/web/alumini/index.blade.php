@@ -8,6 +8,7 @@
 
 @section('content')
 
+   @include('web.alumini.hero')
    @include('web.alumini.main')
    
 @endsection
