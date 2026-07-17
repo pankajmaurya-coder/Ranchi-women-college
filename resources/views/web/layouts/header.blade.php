@@ -106,10 +106,6 @@
                         </ul>
                     </li>
 
-                    <li><a href="#">Examination</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="{{route('alumini')}}">Alumini</a></li>
-
                     <li class="nav-dropdown">
                         <a href="#">RTI <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="nav-dropdown-menu">
@@ -117,6 +113,10 @@
                             <li><a href="#">Action Taken Report</a></li>
                         </ul>
                     </li>
+
+                    <li><a href="#">Examination</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="{{route('alumini')}}">Alumini</a></li>
 
                     <li><a href="#">IQAC / NAAC</a></li>
 
