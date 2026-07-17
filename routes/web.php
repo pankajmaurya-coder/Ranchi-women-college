@@ -1,14 +1,28 @@
 <?php
+require __DIR__.'/auth.php';
 
+
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('web.index');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+
+
+
 //about
-
-
 Route::view('/about', 'web/about/about/index')->name('about');
 Route::view('/background', 'web/about/history')->name('history');
 Route::view('/vision', 'web/about/vision-mission')->name('vision');
@@ -31,7 +45,6 @@ Route::view('/committee', 'web/about/committee')->name('committee');
     });
 
  //Academic
-
  Route::prefix('academic')->name('academic.')->group(function () {
     Route::view('/syllabus', 'web.academics.syllabus')->name('syllabus');
     Route::view('/programme', 'web.academics.programme')->name('programme');
@@ -45,3 +58,4 @@ Route::view('/committee', 'web/about/committee')->name('committee');
   });
 // alumini garima
 Route::view('alumini', 'web/alumini/index')->name('alumini');
+
